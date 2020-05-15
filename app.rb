@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
   post '/' do
     @text_from_user = params[:user_text]
-    @text_from_user=@text_from_user.downcase
+    @text_from_user_downcase = @text_from_user.downcase
     erb :results
   end
 end
