@@ -1,6 +1,9 @@
 <h1>Your Text Analysis</h1>
 
-<h2>Number of Words: <%= @text_from_user.size %></h2>
+<h2>Number of Words: 
+  <%  words = text.split(" ")%>
+  <%= @text_from_user.size %>
+</h2>
 
 <h2>Vowels: </h2>
 
