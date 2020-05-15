@@ -1,18 +1,19 @@
 <h1>Your Text Analysis</h1>
 
 <h2>Number of Words:
-  <%  words = @text_from_user.split(" ")%>
+  <%  words = @text_from_user_downcase.split(" ")%>
   <%= words.size %>
 </h2>
 
-<h2>Vowels: <%=@text_from_user.scan(/[aeoiu]/).count%>
+<h2>Vowels: <%=@text_from_user_downcase.scan(/[aeoiu]/).count%>
 
  </h2>
 
-<h2>Consonants: <%= @text_from_user.scan(/[bcdfghjklmnpqrstvwxyz]/).count
+<h2>Consonants: <%= @text_from_user_downcase.scan(/[bcdfghjklmnpqrstvwxyz]/).count
 %></h2>
 
 <h2>Most Common Letter:
+  <%@text_from_user.%>
 <%s1 =  @text_from_user.gsub(/[^a-z]/, '')%>
 <%arr = s1.split('')%>
 <%arr1 = arr.uniq%>
