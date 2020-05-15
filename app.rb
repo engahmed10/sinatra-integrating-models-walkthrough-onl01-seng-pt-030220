@@ -10,6 +10,7 @@ class App < Sinatra::Base
     text_from_user = params[:user_text]
     @text_from_user=text_from_user
     @text_from_user_downcase = text_from_user.downcase
+    binding.pry
     erb :results
   end
 end
