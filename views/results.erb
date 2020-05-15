@@ -5,7 +5,9 @@
   <%= words.size %>
 </h2>
 
-<h2>Vowels: </h2>
+<h2>Vowels: <%=@text_from_user.scan(/[aeoiuAEOIU]/).count%>
+
+ </h2>
 
 <h2>Consonants: </h2>
 
